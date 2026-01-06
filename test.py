@@ -13,7 +13,7 @@ file_names["04_[3.4]_LLM_Agents"] = "chapter3_llm_evals/instructions/pages/04_[3
 
 file_paths = file_names.values()
 for file_path in file_paths:
-    with open("../../" + file_path, "r") as f:
+    with open(file_path, "r") as f:
         content = f.read()
         headings = re.findall(r"###\s*Exercise\s*-*\s*(.*)|^#\s*([1-5]️⃣)\s*(.*)", content, re.MULTILINE)
         for h in headings:
